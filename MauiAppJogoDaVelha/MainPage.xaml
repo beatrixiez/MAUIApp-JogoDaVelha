@@ -5,24 +5,24 @@
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-            <GradientStop Color="Purple" Offset="0.3" />
-            <GradientStop Color="Red" Offset="1.1" />
+            <GradientStop Color="#0C42FB" Offset="0.3" />
+            <GradientStop Color="#26C4FA" Offset="0.8" />
         </LinearGradientBrush>
     </ContentPage.Background>
 
     <ContentPage.Resources>
         <Style TargetType="Button">
-            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="BackgroundColor" Value="#E30404" />
             <Setter Property="CornerRadius" Value="15" />
-            <Setter Property="TextColor" Value="White" />
+            <Setter Property="TextColor" Value="#FEDC00" />
             <Setter Property="FontSize" Value="80" />
-            <Setter Property="BorderWidth" Value="1" />
-            <Setter Property="BorderColor" Value="White" />
+            <Setter Property="BorderWidth" Value="3" />
+            <Setter Property="BorderColor" Value="#FEDC00" />
         </Style>
     </ContentPage.Resources>
 
     <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*, *, *" ColumnSpacing="10" RowSpacing="10" Margin="10">
-        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Jogo da Velha" />
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Jogo da Velha" TextColor="#21B924" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center"/>
         
         <Button x:Name="btn10" Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked" />
         <Button x:Name="btn11" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked" />
